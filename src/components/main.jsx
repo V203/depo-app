@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Card from "./card";
-import Service from "../Service";
+
 
 // let serve = new Service();
 
@@ -15,7 +15,7 @@ class Main extends Component {
             <main>
 
                 <div className="main_menue">
-                    {/* <Card />                    */}
+                    <Card />                   
                 </div>
 
                

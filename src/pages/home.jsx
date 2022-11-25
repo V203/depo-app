@@ -10,6 +10,7 @@ class Home extends Component {
     constructor(props) {
         super(props)
         this.btn = new ButtonInstance()
+        console.log(this.btn.homeBtn());
 
     }
 
@@ -17,7 +18,7 @@ class Home extends Component {
         return (
             <>
                 <Nav />
-                {/* <Main /> */}
+                <Main />
                 {/* <Footer home={this.btn.homeBtn()} cart={this.btn.cartBtn()} /> */}
 
 

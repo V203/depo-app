@@ -26,7 +26,7 @@ export default class Specials extends React.Component {
                 <Nav />
                 <Total />
                 <SpecialsMenu />
-                {/* <Footer home={this.btn.homeBtn()} cart={this.btn.cartBtn()} /> */}
+                <Footer home={this.btn.homeBtn()} cart={this.btn.cartBtn()} />
             </>)
 
     }

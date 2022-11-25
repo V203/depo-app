@@ -10,7 +10,7 @@ class Card extends Component {
     constructor(props) {
         super(props);
 
-        this.pizza =  Service();
+        this.pizza = Service();
         // this.tot =  AddRemove()
 
 
@@ -20,8 +20,8 @@ class Card extends Component {
 
     render() {
         return <>
-        
-        <AddRemove />
+
+            <AddRemove />
         </>
     }
 }
