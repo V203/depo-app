@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/depo-app/static/css/main.15891bcb.css",
-    "main.js": "/depo-app/static/js/main.5a4a13a5.js",
+    "main.js": "/depo-app/static/js/main.a7263c1f.js",
     "static/js/787.cc3c606d.chunk.js": "/depo-app/static/js/787.cc3c606d.chunk.js",
     "index.html": "/depo-app/index.html",
     "main.15891bcb.css.map": "/depo-app/static/css/main.15891bcb.css.map",
-    "main.5a4a13a5.js.map": "/depo-app/static/js/main.5a4a13a5.js.map",
+    "main.a7263c1f.js.map": "/depo-app/static/js/main.a7263c1f.js.map",
     "787.cc3c606d.chunk.js.map": "/depo-app/static/js/787.cc3c606d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.15891bcb.css",
-    "static/js/main.5a4a13a5.js"
+    "static/js/main.a7263c1f.js"
   ]
 }
