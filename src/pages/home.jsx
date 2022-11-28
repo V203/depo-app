@@ -1,7 +1,7 @@
 import Nav from "../components/nav"
 import React, { Component } from "react"
 import Main from "../components/main"
-import Footer from "../components/footer"
+// import Footer from "../components/footer"
 import ButtonInstance from "../components/ButtonInstance"
 
 

@@ -95,7 +95,7 @@ export default function Footer(props) {
                                         </tbody>
                                         <tfoot>
                                             <tr>
-                                                <td>Tota Grand</td><td colSpan={2}>{props.total}</td>
+                                                <td>Total Grand</td><td colSpan={2}>{props.total}</td>
                                             </tr>
                                         </tfoot>
                                     </table>

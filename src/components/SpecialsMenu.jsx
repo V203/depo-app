@@ -1,21 +1,27 @@
 import React from "react"
+import Footer from "./footer"
 import Nav from "./nav"
-// import Footer from "./footer"
+import Service from "../Service"
 import Total from "./Total"
-// import { ctxTotal } from "../Ctx"
-// import { useContext } from "react"
-export default class SpecialsMenu extends React.Component {
+import { ctxTotal } from "../Ctx"
+import { useContext } from "react"
 
 
-    render() {
+let SpecialsMenu = () => {
 
-        return (<>
+    let [total] = useContext(ctxTotal);
+    let menu = Service();
 
-            <Nav />
-            <Total />
-                    <div className="spacer">
-                    </div>
-            <div className="our_flex_r">
+
+
+
+    return (<>
+
+        <Nav />
+        <Total />
+        <div className="spacer">
+        </div>
+        <div className="our_flex_r">
             <div className="specials">
 
                 <div className="specials_inner">
@@ -26,7 +32,7 @@ export default class SpecialsMenu extends React.Component {
                         <img style={{ margin: 4, height: 200, width: 300, borderRadius: 10 }} src="./bbq.jpeg" alt="" />
                     </div>
 
-                    
+
 
 
                 </div>
@@ -40,20 +46,22 @@ export default class SpecialsMenu extends React.Component {
                     <h3>Large BBQ pizza * 1</h3>
                     <h3>Large BBQ pizza * 1</h3>
                     <h3>Free Pizza Cave headsets <img src="./headsets.svg" alt="" /> </h3>
-                    <hr style={{background:"red"}}/>
+                    <hr style={{ background: "red" }} />
 
-                    <h4>All for <span style={{fontSize:32}}>R</span><span style={{color:"green", fontSize:30}}>41.99</span></h4>
-                    <img style={{width:50,height:50,marginLeft:"auto",marginRight:"auto"}} src="./exploding.svg" alt="" />
+                    <h4>All for <span style={{ fontSize: 32 }}>R</span><span style={{ color: "green", fontSize: 30 }}>41.99</span></h4>
+                    <img style={{ width: 50, height: 50, marginLeft: "auto", marginRight: "auto" }} src="./exploding.svg" alt="" />
                 </div>
 
             </div>
 
 
-            </div>
-            {/* <Footer /> */}
-        </>)
-    }
+        </div>
+        <Footer total={total} order={menu.customerOrder()} />
+    </>)
+
 
 
 
 }
+
+export default SpecialsMenu

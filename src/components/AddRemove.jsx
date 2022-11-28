@@ -9,9 +9,10 @@ let  AddRemove = ()=> {
 
     // constructor(props) {
     //     super(props);
-    let menu =  Service()
-    let [total, setTotal] = useContext(ctxTotal)
+    let menu =  Service();
     
+    let [total, setTotal] = useContext(ctxTotal);
+    console.log(total);    
    let  addPizza = (type, size, e) =>{
         menu.addPizza(type, size);
         setTotal(menu.getGrandTotal());

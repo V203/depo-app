@@ -32,7 +32,7 @@ let BillingCard = (props) => {
     let handleSubmit = (e) => {
         e.preventDefault()
         
-            alert(input.firstName)
+            alert(input.lastName)
        
         navigate("/confirmation");
 
@@ -171,8 +171,6 @@ let Cart = (props) => {
             <Total />
         </>
     )
-
-
 
 }
 

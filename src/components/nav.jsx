@@ -5,6 +5,9 @@ import ButtonInstance from "./ButtonInstance";
 import { Link } from "react-router-dom";
 import SpecialsMenu from "./SpecialsMenu";
 import Home from "../pages/home";
+import About from "../pages/About";
+import Contact from "../pages/contact";
+import Locator from "../pages/locator";
 
 
 
@@ -57,15 +60,23 @@ class Nav extends Component {
             </div>
           </Link>
 
-          <div className="menu_flex_r">
+         <Link to={"/contact"} element={<Contact />}>
+         <div className="menu_flex_r">
             <img style={{ marginLeft: 10, marginRight: 5 }} src="./contact.svg" alt="" /><p className="menu_typo">Contact</p>
           </div>
+         </Link>
+          <Link to={"/locator"} element={<Locator />}>
+          
           <div className="menu_flex_r">
             <img style={{ marginLeft: 10, marginRight: 5 }} src="./locator.svg" alt="" /><p className="menu_typo">Locator</p>
           </div>
+          </Link>
+          <Link to={"/about"} element={<About />}>
           <div className="menu_flex_r">
             <img style={{ marginLeft: 10, marginRight: 5 }} src="./about.svg" alt="" /><p className="menu_typo">About</p>
           </div>
+          
+          </Link>
         </div><nav>
           <div onClick={this.open_menu_frame} className="hambuger_container">
             <div className="hamburger_menue">
