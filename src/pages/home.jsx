@@ -10,7 +10,7 @@ class Home extends Component {
     constructor(props) {
         super(props)
         this.btn = new ButtonInstance()
-        console.log(this.btn.homeBtn());
+  
 
     }
 

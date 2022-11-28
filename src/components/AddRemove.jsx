@@ -27,7 +27,7 @@ let  AddRemove = ()=> {
     let CardsDisplay= () =>{
         return menu.all_pizza().map(el => <div className="card">
             <p className="card-typo">{el.type}</p>
-            <img className="card-image" src={el.img} alt="" />
+            <img className="card-image" src={"./"+el.img} alt="" />
             <div className="inner-card">
 
 
