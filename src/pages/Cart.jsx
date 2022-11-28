@@ -54,23 +54,23 @@ let BillingCard = (props) => {
                                 <label htmlFor="">
                                     Name on card:
                                     <input type="text" name="nameOnCard" id="" onChange={handleChange} />
-                                    <hr />
+                                
                                 </label>
 
                                 <label htmlFor="">
                                     Card Number :
                                     <input type="text" name="cardNumber" id="" onChange={handleChange} />
-                                    <hr />
+                                
                                 </label>
                                 <label htmlFor="">
                                     EXP :
                                     <input type="text" name="EXPdate" id="" onChange={handleChange} />
-                                    <hr />
+                                
                                 </label>
                                 <label htmlFor="">
                                     CVV
                                     <input type="text" name="CVV" id="" onChange={handleChange} />
-                                    <hr />
+                                
                                 </label>
 
 
@@ -84,34 +84,34 @@ let BillingCard = (props) => {
                                 <label htmlFor="">
                                     Firstname:
                                     <input type="text" name="firstName" id="" onChange={handleChange} />
-                                    <hr />
+                                
                                 </label>
 
                                 <label htmlFor="">
                                     Lastname :
                                     <input type="text" name="lastName" id="" onChange={handleChange} />
-                                    <hr />
+                                
                                 </label>
                                 <label htmlFor="">
                                     Street address
                                     <input type="text" name="street" id="" onChange={handleChange} />
-                                    <hr />
+                                
                                 </label>
                                 <label htmlFor="">
                                     Suburb :
                                     <input type="text" name="suburb" id="" onChange={handleChange} />
-                                    <hr />
+                                
                                 </label>
 
                                 <label htmlFor="">
                                     Province
                                     <input type="text" name="province" id="" onChange={handleChange} />
-                                    <hr />
+                                
                                 </label>
                                 <label htmlFor="">
                                     Zip Code :
                                     <input type="text" name="zipCode" id="" onChange={handleChange} />
-                                    <hr />
+                                
                                 </label>
 
 

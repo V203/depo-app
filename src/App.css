@@ -184,12 +184,12 @@ table {
 
 .btn {
   cursor: pointer;
-  width: 320px;
-  height: 110px;
+  width: 120px;
+  height: 70px;
   left: 80%;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   /* position: absolute; */
-  width: 250px;
+  
   height: 60px;
   background: #FFB627;
   border: 3px solid #FF9505;
@@ -197,8 +197,8 @@ table {
 }
 
 .btn:hover {
-  box-shadow: 9px 8px 8px rgba(0, 0, 0, 0.957);
-  border: 6px solid #FF9505;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.957);
+  border: 3px solid #FF9505;
 }
 
 .btnTypo {
@@ -208,6 +208,7 @@ table {
   line-height: 65px;
   letter-spacing: 0em;
   text-align: center;
+  height: 30px;
 }
 
 
@@ -356,19 +357,15 @@ table {
 .total-display {
   box-sizing: border-box;
   position: fixed;
-  padding-left: 5px;
-  padding-right: 5px;
-  height: fit-content;
   right: 0%;
-  top: 100px;
-  padding-top: 0;
-  
-  
-  height: 60px;
+  top: 115px;
+  bottom: 1.18%;
+  width: fit-content;
+  height: 70px;
   align-self: right;
   background: #FFB627;
   border: 1px solid #000000;
-  
+  filter: blur(1px);
   /* z-index: auto; */
 }
 
@@ -430,7 +427,7 @@ table {
   width: 80%;
   height: 104px;
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
 
   background: #FF9505;
   border: 1px solid #000000;
@@ -440,11 +437,11 @@ table {
 .overlay-inner {
   /* box-sizing: border-box; */
   height: 80%;
-  width: 85%;
+  width: 90%;
   position: fixed;
   display: flex;
   flex-direction: row;
-  margin-bottom: 5%;
+  padding: 2% 2% 2% 2%;
   justify-content: center;
   align-items: center;
 
@@ -458,7 +455,7 @@ table {
 
 
   height: 70%;
-  width: 90%;
+  width: 97%;
   margin: 10px 10px 10px 10px;
 
   background: #FF9505;
@@ -700,12 +697,13 @@ bottom: 0%; */
 
 .overlay_header_inner {
   /* box-sizing: border-box; */
-
+display: flex;
+flex-flow: row;
 
   background: #FBBC04;
   border: 1px solid #000000;
   border-radius: 23px;
-  width: 60%;
+  width: 75%;
   height: 100%;
 }
 
@@ -714,7 +712,6 @@ bottom: 0%; */
   display: flex;
   flex-flow: row;
   height: 100%;
-  width: 400px;
 
 
 
@@ -758,7 +755,7 @@ bottom: 0%; */
 .our_flex_c {
   display: flex;
   flex-flow: column;
-  width: 50%;
+  width: 100%;
   height: 100%;
   justify-content: center;
   padding-left: 1%;
