@@ -1,7 +1,7 @@
 let obj = {
     "pizzas": [
         {
-            "type": "Bbq",
+            "type": "BBQ",
 
             "small": { "price": 17.99, "QTY":  0,type:"BBQ",size:"Small", total:function(){return this.price * this.QTY },nameAndSize:function(){return this.size+" "+ this.type} },
             "medium": { "price": 25.99, "QTY":  0,type:"BBQ",size:"Medium", total:function(){return this.price * this.QTY },nameAndSize:function(){return this.size+" "+ this.type} },
