@@ -7,7 +7,7 @@ import ErrorMsg from "../pages/ErrorMsg";
 export default function Footer(props) {
     let [isToggle, setToggle] = useState(false);
     let [cartONOff, openCloseCart] = useState(false);
-    let [errorMsg,toggleError] = useState(false);
+    let [errorMsg, toggleError] = useState(false);
     let navigate = useNavigate();
     // var  error = null;
 
@@ -15,15 +15,15 @@ export default function Footer(props) {
 
 
     let popOverlay = (error) => {
-        if(props.total > 0.00){
+        if (props.total > 0.00) {
             setToggle(!isToggle)
-        }else if(props.total <= 0.00){
-        
-         toggleError(!errorMsg)
-         setTimeout(()=>!errorMsg,3000 )
+        } else if (props.total <= 0.00) {
+
+            toggleError(!errorMsg)
+            setTimeout(() => !errorMsg, 3000)
         }
 
-        }
+    }
     let OpenCloseCart = () => {
         openCloseCart(!cartONOff)
         setToggle(!isToggle)
@@ -38,7 +38,7 @@ export default function Footer(props) {
                         <BillingCard total={props.total} />
 
                         <div className="our_flex_r">
-                            <div onClick={() => navigate("/thanks")}  className="btn" style={{ height: 55, width: 150, color: "green", marginRight: 5 }}> <div className="btnTypo" style={{ textDecorationColor: "null" }}>Pay</div> </div>
+                            <div onClick={() => navigate("/thanks")} className="btn" style={{ height: 55, width: 150, color: "green", marginRight: 5 }}> <div className="btnTypo" style={{ textDecorationColor: "null" }}>Pay</div> </div>
                             <div className="btn" onClick={OpenCloseCart} style={{ height: 55, width: 150, color: "red", marginLeft: 5 }}> <div className="btnTypo" >Cancel</div> </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ export default function Footer(props) {
     }
     return (
         <>
-        {/* {props.total <= 0.00 ?<Test />:"" }  */}
+            {/* {props.total <= 0.00 ?<Test />:"" }  */}
             <CartOverlay />
             <ErrorMsg bool={errorMsg} />
             <footer>
@@ -66,20 +66,23 @@ export default function Footer(props) {
                 </div>
 
                 <div className="overlay" style={{ display: isToggle ? "flex" : "none" }} >
+
                     <div className="overlay-inner">
                         <div className="our_flex_c">
-                            <div className="overlay_header">
-                                <div className="overlay_header_inner">
-                                    <h1>Your cart 1</h1>
-                                </div>
-                                <div className="float_right">
-                                    <img src="./order_cart.svg" alt="" />
-                                </div>
-                            </div>
                             <div className="our_flex_r">
+
+
                                 <div className="overlay-content">
-                                    <h1>Order details</h1>
-                                    <table>
+                                    <div className="overlay_header">
+                                        <div className="overlay_header_inner">
+                                            <h2>Your cart 1</h2>
+                                        </div>
+                                        <div className="float_right">
+                                            <img src="./order_cart.svg" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <table className="styled-table">
                                         <thead>
                                             <tr>
                                                 <th>Pizza</th><th>QTY</th><th>Price</th>
@@ -99,11 +102,7 @@ export default function Footer(props) {
                                             </tr>
                                         </tfoot>
                                     </table>
-                                </div>
 
-                                <div className="overlay-content">
-                                    <h1>Cart Total 2</h1>
-                                    <h3>Total:R{props.total} </h3>
                                     <div className="our_flex_r">
                                         {/* navigate(`/cart/${props.total}/${props.order}`) */}
                                         <div onClick={OpenCloseCart} className="btn" style={{ height: 55, width: 150, color: "green", marginRight: 5 }}> <div className="btnTypo" style={{ textDecorationColor: "null" }}>Pay R{props.total}</div> </div>
